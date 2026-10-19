@@ -72,7 +72,7 @@ export default function ContactPageClient() {
       } else {
         const subject = encodeURIComponent(`Portfolio Contact from ${form.first_name} ${form.last_name}`);
         const body = encodeURIComponent(`Name: ${form.first_name} ${form.last_name}\nEmail: ${form.email}\nOrg: ${form.organization}\nRegion: ${form.region}\nIndustry: ${form.industry}\n\n${form.message}`);
-        window.open(`mailto:sandeepkumarbollavaram@gmail.com?subject=${subject}&body=${body}`);
+        window.open(`mailto:bollavaramsandeep@gmail.com?subject=${subject}&body=${body}`);
       }
       setStatus('success');
     } catch (err: unknown) {

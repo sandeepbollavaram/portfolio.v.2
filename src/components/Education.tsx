@@ -1,38 +1,48 @@
 'use client';
 
 import AnimatedSection from './AnimatedSection';
-import { GraduationCap, Award, BookOpen, Cpu, Globe } from 'lucide-react';
+import { GraduationCap, Award, BookOpen, Cpu, Users, BadgeCheck } from 'lucide-react';
 
 const TIMELINE = [
   {
     icon: GraduationCap,
     year: '2024 – 2028',
     title: 'B.Tech — Computer Science & Engineering',
-    org: 'SCSVMV University, Kanchipuram',
+    org: 'SCSVMV University, Kanchipuram · CGPA 7.88 / 10 · Last semester 8.08',
     desc: 'Specializing in AI, Machine Learning, and Software Engineering. Active in lab projects across AI, robotics, data science, and full-stack development.',
     color: '#6366F1',
     type: 'Education',
     tags: ['AI/ML', 'Robotics', 'Web Dev', 'Data Science', 'Algorithms'],
   },
   {
-    icon: Globe,
-    year: '2026',
-    title: 'Shukra — Kubernetes Operator',
-    org: 'Personal Project',
-    desc: 'Production-grade Kubernetes operator in Go. One AppEnvironment YAML creates Deployments, Services, Ingress, HPA, and security resources. AI-assisted CLI.',
-    color: '#0891B2',
-    type: 'Project',
-    tags: ['Go', 'Kubernetes', 'Helm', 'DevOps', 'AI CLI'],
-  },
-  {
     icon: Award,
     year: '2026',
-    title: 'AI Attendance System — Production',
-    org: 'University Project · 160+ commits',
-    desc: 'Production-grade facial recognition attendance for university. Next.js + Firebase + TensorFlow.js + face-api.js. Role-based dashboards, Excel export.',
+    title: '1st Place — Apogee 2026 Technical Symposium',
+    org: 'SCSVMV University',
+    desc: 'Won first place for a paper on neuromorphic computing — LIF neurons, STDP and spiking neural networks.',
+    color: '#C2410C',
+    type: 'Award',
+    tags: ['Neuromorphic', 'SNN', 'STDP', 'Research'],
+  },
+  {
+    icon: Users,
+    year: '2026 – Present',
+    title: 'President & Team Lead — E-Cell SCSVMV',
+    org: 'Entrepreneurship Cell · 16-member core team',
+    desc: "Organised 4+ events under E-Cell IIT Bombay's National Entrepreneurship Challenge, including YUKTI '26, and built the official site at ecellscsvmv.in.",
+    color: '#0891B2',
+    type: 'Leadership',
+    tags: ['Leadership', 'Events', 'Next.js', 'Startups'],
+  },
+  {
+    icon: BadgeCheck,
+    year: '2026',
+    title: 'AWS AI Practitioner Challenge',
+    org: 'Udacity · Apr 2026',
+    desc: 'Completed the AWS AI Practitioner Challenge course. Also earned 48 badges on Microsoft Learn.',
     color: '#7C3AED',
-    type: 'Project',
-    tags: ['Next.js', 'TensorFlow.js', 'Firebase', 'TypeScript'],
+    type: 'Certification',
+    tags: ['AWS', 'AI', 'Microsoft Learn'],
   },
   {
     icon: Cpu,
@@ -50,7 +60,7 @@ const TIMELINE = [
     title: 'Academic Lab Milestones',
     org: 'SCSVMV University',
     desc: 'Completed OOP Lab (39 C++ programs), DSA Lab, DAA Lab Sem 4, Python Lab, R Data Science projects. Multi-semester academic excellence.',
-    color: '#C2410C',
+    color: '#64748B',
     type: 'Academic',
     tags: ['C++', 'Python', 'R', 'Algorithms', 'DSA'],
   },

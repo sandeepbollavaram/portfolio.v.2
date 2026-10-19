@@ -19,7 +19,7 @@ const HIGHLIGHTS = [
   {
     icon: BrainCircuit,
     title: 'AI Systems & LLM Infra',
-    desc: 'Kairo — MCP-based persistent memory for AI coding agents. Local-first LLM systems with Ollama, embeddings, and vector retrieval.',
+    desc: 'Kairo — MCP memory for AI coding agents (40+ tools). VORTEX — a multi-agent runtime that self-heals infrastructure. ALOS — a fully offline assistant.',
     color: '#7C3AED',
     bg: 'rgba(124,58,237,0.07)',
     border: 'rgba(124,58,237,0.18)',
@@ -27,7 +27,7 @@ const HIGHLIGHTS = [
   {
     icon: Cloud,
     title: 'Full Stack & Cloud',
-    desc: 'University ERP across web + Flutter, and OCI SentinelMesh — a FastAPI/React cloud compliance platform with a rule engine and CI.',
+    desc: 'Anything Download — 38 media tools live on Oracle Cloud with 377 tests — plus a fintech complaint platform for Vastu Housing Finance and the University ERP.',
     color: '#0284C7',
     bg: 'rgba(2,132,199,0.07)',
     border: 'rgba(2,132,199,0.18)',
@@ -110,8 +110,9 @@ export default function About() {
               <span style={{ color: '#0F0E14', fontWeight: 500 }}>CRDs, webhooks, and gRPC control planes</span> to{' '}
               <span style={{ color: '#0F0E14', fontWeight: 500 }}>MCP-based agent infrastructure</span> and{' '}
               <span style={{ color: '#0F0E14', fontWeight: 500 }}>native Windows AI assistants</span>.
-              I also build product at <span style={{ color: '#0F0E14', fontWeight: 500 }}>Flexdee Technologies</span>,
-              owning AI platform features, backend systems, and CI/CD.
+              Right now I freelance at <span style={{ color: '#0F0E14', fontWeight: 500 }}>Algorithec</span> on an
+              AI-driven commerce decision engine with ONDC integration, lead a complaint platform for
+              Vastu Housing Finance, and head a 16-member team as E-Cell SCSVMV President.
             </p>
 
             {/* Resume button */}
@@ -123,7 +124,7 @@ export default function About() {
             <div style={{ display: 'flex', flexWrap: 'wrap', gap: '14px', marginBottom: '28px' }}>
               {[
                 { icon: MapPin, text: 'Kanchipuram, Tamil Nadu' },
-                { icon: GraduationCap, text: 'SCSVMV University, CSE' },
+                { icon: GraduationCap, text: 'SCSVMV University, CSE · CGPA 7.88' },
               ].map(item => (
                 <div key={item.text} style={{
                   display: 'flex', alignItems: 'center', gap: '6px',

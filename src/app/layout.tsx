@@ -5,7 +5,7 @@ import PageViewTracker from '@/components/PageViewTracker';
 const SITE_URL = 'https://www.sandeepkumarbollavaram.in';
 const OG_IMAGE = '/images/profile.jpg';
 const DESCRIPTION =
-  'AI Systems Engineer building Kubernetes operators, AI agent infrastructure, local LLM systems, developer tools, desktop software, cloud platforms, and robotics applications.';
+  'Full-stack, platform and AI engineer — 2,000+ GitHub contributions and 20+ shipped projects spanning Kubernetes operators, LLM infrastructure, agentic developer tooling, offline-first AI, and production web apps. Freelance AI/ML Engineer at Algorithec.';
 
 export const metadata: Metadata = {
   title: 'Sandeep Kumar Bollavaram | AI Systems Engineer',
