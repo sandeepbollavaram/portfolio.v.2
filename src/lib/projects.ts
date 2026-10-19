@@ -81,18 +81,68 @@ export const PRIVATE_REPOS = [
 export const PROJECTS: Project[] = [
   // ───────────── HOMEPAGE FEATURED (exactly 6, in order) ─────────────
   {
+    id: 'anything-download',
+    title: 'Anything Download',
+    description:
+      'Privacy-first media toolkit — 38 tools across video, audio, image, PDF and web, live on Oracle Cloud.',
+    longDesc:
+      'Anything Download is a solo-built, privacy-first media toolkit with 38 tools across video, audio, image, PDF and web, plus a Chrome extension. A capability-driven engine inspects each link or file and offers only the operations that genuinely apply. A Next.js 16 frontend talks to a FastAPI backend backed by a Redis job queue, with separate worker and cleanup processes running FFmpeg and PDF pipelines — results are temporary and self-delete. The service is hardened against SSRF (private ranges, cloud metadata, redirects, DNS rebinding) with spoof-resistant rate limiting and strict upload, memory, timeout and output caps. It runs on its own domain on Oracle Cloud behind Caddy with automatic HTTPS.',
+    impact:
+      '38 media tools in one privacy-first app — 377 automated tests, a 6-job CI pipeline, and a live Oracle Cloud deployment.',
+    features: [
+      '38 tools across video, audio, image, PDF and web, plus a Chrome extension',
+      'Capability-driven engine — only offers operations that apply to each link or file',
+      'Redis job queue with dedicated worker + cleanup processes; results self-delete',
+      'SSRF hardening (private ranges, metadata, redirects, DNS rebinding) + spoof-resistant rate limits',
+      '377 automated tests (73% backend coverage) · 6-job CI with Trivy scans and dependency audits',
+      'Deployed on Oracle Cloud behind Caddy with automatic HTTPS',
+    ],
+    category: 'Full Stack',
+    status: 'Deployed',
+    tags: ['Next.js 16', 'FastAPI', 'Redis', 'FFmpeg', 'Docker', 'Caddy', 'Oracle Cloud', 'Trivy'],
+    repo: 'anything-download',
+    github: 'https://github.com/sandeepbollavaram/anything-download',
+    demo: 'https://staging.anythingdownload.in',
+    featuredHome: true,
+    order: 1,
+    year: 2026,
+  },
+  {
+    id: 'vortex',
+    title: 'VORTEX',
+    description:
+      'Self-hosted autonomous infrastructure platform in Go — provisions, monitors and self-heals services with AI agents.',
+    longDesc:
+      'VORTEX is a self-hosted autonomous infrastructure platform written in Go. It provisions, monitors and self-heals services on a single node, with an integrated reverse proxy and automatic TLS certificate management. A multi-agent AI runtime plans and executes infrastructure operations, and the whole platform is controlled through a Telegram bot interface. 600+ commits span orchestration, health checks and deployment automation.',
+    impact:
+      'An AI-operated mini-PaaS: agents plan and run infra changes while the platform self-heals — 600+ commits.',
+    features: [
+      'Provisions, monitors and self-heals services on a single node',
+      'Integrated reverse proxy with automatic TLS certificate management',
+      'Multi-agent AI runtime that plans and executes infrastructure operations',
+      'Operated end to end through a Telegram bot interface',
+    ],
+    category: 'Platform & Infrastructure',
+    status: 'Open Source',
+    tags: ['Go', 'AI Agents', 'Reverse Proxy', 'TLS', 'Docker', 'Telegram Bot API'],
+    github: 'https://github.com/vortex-run/vortex',
+    featuredHome: true,
+    order: 2,
+    year: 2026,
+  },
+  {
     id: 'shukra',
     title: 'Shukra Operator',
     description:
       'Production-grade Kubernetes operator: one AppEnvironment CRD provisions an entire full-stack app environment.',
     longDesc:
-      'Shukra is a production-grade Kubernetes platform operator built in Go with Kubebuilder and controller-runtime. A single AppEnvironment custom resource provisions an entire application stack — Deployments, Services, ConfigMaps, Ingress, HPA, Jobs, and security resources — through idempotent reconciliation. Built with finalizers, status conditions, leader election, admission webhooks, and structured logging for enterprise reliability. Ships via Helm OCI charts and exposes a gRPC control surface, with an AI-assisted CLI (`shukra ask`) for conversational workflow guidance. Treats namespaces as first-class security tenancy boundaries. Supports kind, k3d, Minikube, EKS, GKE, and AKS.',
+      'Shukra is a production-grade Kubernetes platform operator built in Go with Kubebuilder and controller-runtime. A single AppEnvironment custom resource provisions an entire application stack — Deployments, Services, ConfigMaps, Ingress, HPA, Jobs, and security resources — through idempotent reconciliation. Built with finalizers, status conditions, leader election, admission webhooks, and structured logging for enterprise reliability. Ships via Helm OCI charts (8 public releases) and exposes a gRPC control surface, with an AI-assisted CLI (`shukra ask`) for conversational workflow guidance. Treats namespaces as first-class security tenancy boundaries. Supports kind, k3d, Minikube, EKS, GKE, and AKS.',
     impact:
       'Collapses an entire app environment into one declarative CRD — replacing dozens of hand-written manifests.',
     features: [
       'Single AppEnvironment CRD provisions the full stack (Deployments, Services, Ingress, HPA)',
       'Production-grade: finalizers, leader election, idempotent reconciliation, admission webhooks',
-      'Helm OCI distribution + gRPC control surface',
+      'Helm OCI distribution (8 public releases) + gRPC control surface',
       'AI-assisted CLI — `shukra ask` for conversational workflow guidance',
       'Namespace tenancy as security boundaries — multi-tenant safe',
       'Multi-cluster: kind, k3d, Minikube, EKS, GKE, AKS · CI via GitHub Actions',
@@ -103,7 +153,7 @@ export const PROJECTS: Project[] = [
     repo: 'Shukra',
     github: 'https://github.com/sandeepbollavaram/Shukra',
     featuredHome: true,
-    order: 1,
+    order: 4,
     year: 2026,
   },
   {
@@ -112,24 +162,48 @@ export const PROJECTS: Project[] = [
     description:
       'Persistent engineering memory and session-continuity platform for AI coding agents — MCP-based, local-first.',
     longDesc:
-      'Kairo gives AI coding agents long-term, project-scoped memory and session continuity. Built on the Model Context Protocol (MCP) and running local-first, it maintains a vector memory of engineering decisions, indexes repository intelligence, and supports checkpoint recovery so an agent can resume exactly where it left off across sessions. Embeddings power semantic retrieval over past work, decisions, and code context — turning a stateless assistant into one with durable, queryable engineering memory.',
+      'Kairo gives AI coding agents long-term, project-scoped memory and session continuity. Built on the Model Context Protocol (MCP) with 40+ tools and running local-first, it maintains a vector memory of engineering decisions, indexes repository intelligence, and supports checkpoint recovery so an agent can resume exactly where it left off across sessions. Embeddings power semantic retrieval over past work, decisions, and code context — turning a stateless assistant into one with durable, queryable engineering memory.',
     impact:
       'Gives stateless AI coding agents durable, project-scoped memory and resumable sessions.',
     features: [
-      'MCP server — plugs into any MCP-compatible AI coding agent',
+      'MCP server with 40+ tools — plugs into any MCP-compatible AI coding agent',
       'Local-first vector memory with embeddings + semantic retrieval',
       'Checkpoint recovery — resume sessions with full context intact',
       'Repository intelligence: indexes code, decisions, and engineering history',
     ],
     category: 'AI & LLM Systems',
     status: 'In Progress',
-    tags: ['MCP', 'Python', 'Embeddings', 'Vector Retrieval', 'AI Agents', 'Local AI', 'RAG'],
+    tags: ['MCP', 'TypeScript', 'Embeddings', 'Vector Retrieval', 'AI Agents', 'Local AI', 'RAG'],
     repo: 'Kairo',
     github: 'https://github.com/sandeepbollavaram/Kairo',
     featuredHome: true,
-    order: 2,
+    order: 3,
     year: 2026,
   },
+  {
+    id: 'complaint-intelligence',
+    title: 'Complaint Intelligence Platform',
+    description:
+      'Fintech complaint platform for Vastu Housing Finance — 7-language voice agent, evidence-cited investigations, audit log.',
+    longDesc:
+      'A pre-production complaint intelligence platform built for Vastu Housing Finance, where I am the architect and tech lead. It handles omnichannel complaint intake — including a 7-language voice agent — runs evidence-cited investigations, and routes every resolution through human approval. All actions land in a hash-chained, tamper-evident audit log. Backend in Python/FastAPI with SQLAlchemy, frontend in Next.js 14, and roughly 990 automated tests in pytest.',
+    impact:
+      'Human-in-the-loop AI for regulated complaints — evidence-cited, approval-gated, and fully auditable, with ~990 tests.',
+    features: [
+      'Omnichannel intake, including a 7-language voice agent',
+      'Evidence-cited investigation with human-approved resolutions',
+      'Hash-chained audit log for tamper-evident compliance',
+      '~990 automated tests across the platform',
+    ],
+    category: 'AI & LLM Systems',
+    status: 'In Progress',
+    tags: ['Python', 'FastAPI', 'Next.js 14', 'SQLAlchemy', 'pytest', 'Voice AI', 'Human-in-the-loop AI'],
+    private: true, // client prototype — no public repo link
+    featuredHome: true,
+    order: 5,
+    year: 2026,
+  },
+  // Earlier homepage picks — now shown on the projects page only.
   {
     id: 'vayu',
     title: 'Vayu',
@@ -150,8 +224,6 @@ export const PROJECTS: Project[] = [
     tags: ['WinUI 3', '.NET', 'C#', 'Ollama', 'Local AI', 'Whisper', 'Voice'],
     repo: 'Vayu',
     github: 'https://github.com/sandeepbollavaram/Vayu',
-    featuredHome: true,
-    order: 3,
     year: 2026,
   },
   {
@@ -173,8 +245,6 @@ export const PROJECTS: Project[] = [
     status: 'Production System',
     tags: ['Next.js', 'TypeScript', 'Flutter', 'Dart', 'Firebase', 'PostgreSQL'],
     private: true, // production system — no public repo link
-    featuredHome: true,
-    order: 4,
     year: 2026,
   },
   {
@@ -197,8 +267,6 @@ export const PROJECTS: Project[] = [
     tags: ['FastAPI', 'Python', 'React', 'SQLite', 'Docker', 'CI/CD', 'Cloud Security'],
     repo: 'oci-sentinelmesh',
     github: 'https://github.com/sandeepbollavaram/oci-sentinelmesh',
-    featuredHome: true,
-    order: 5,
     year: 2026,
   },
   {
@@ -220,12 +288,57 @@ export const PROJECTS: Project[] = [
     tags: ['Python', 'PyQt6', 'OpenCV', 'NumPy', 'Windows'],
     repo: 'vibrance',
     github: 'https://github.com/sandeepbollavaram/vibrance',
+    year: 2026,
+  },
+
+  {
+    id: 'alos',
+    title: 'ALOS',
+    description:
+      'Fully offline personal AI assistant — local LLM, voice I/O, MCP client, and an ESP32 touchscreen bridge. No cloud.',
+    longDesc:
+      'ALOS is a fully offline personal AI assistant — no cloud and no API key. A 3-panel PyQt6 desktop GUI sits on top of an 8-intent router covering chat, scheduling, reminders, health, code, smart home, planning and system tasks. Voice in and out runs locally with faster-whisper, a Python Skills plugin system makes it extensible, and MCP client support (stdio and HTTP) lets it use external tools. A WebSocket ESP32 bridge drives a 5-screen LVGL touchscreen and relays, backed by a 7-table SQLite layer and 160+ automated tests.',
+    impact:
+      'A private assistant that runs entirely on-device — from voice to smart-home relays — with 160+ automated tests.',
+    features: [
+      'Offline-first: local LLM via Ollama, no cloud and no API key',
+      '8-intent router: chat, scheduling, reminders, health, code, smart home, planning, system',
+      'Local voice I/O with faster-whisper · Python Skills plugin system',
+      'MCP client support over stdio and HTTP',
+      'WebSocket ESP32 bridge driving a 5-screen LVGL touchscreen and relays',
+    ],
+    category: 'AI & LLM Systems',
+    status: 'Open Source',
+    tags: ['Python', 'PyQt6', 'Ollama', 'ESP32', 'WebSockets', 'SQLite', 'MCP', 'faster-whisper'],
+    repo: 'ALOS',
+    github: 'https://github.com/sandeepbollavaram/ALOS',
     featuredHome: true,
     order: 6,
     year: 2026,
   },
 
   // ───────────── PROJECTS-PAGE ONLY (not on homepage) ─────────────
+  {
+    id: 'ecell-website',
+    title: 'E-Cell SCSVMV Website',
+    description:
+      'Official Entrepreneurship Cell website — events and results, blog, magazine, newsletter, contact and legal pages.',
+    longDesc:
+      'The official website of the Entrepreneurship Cell at SCSVMV University, which I designed, built, deployed and maintain as E-Cell President. Built with Next.js, it covers events and results, a blog, a magazine, newsletter sign-up, contact and legal pages, and serves as the hub for campus startup initiatives such as the NEC campus round.',
+    impact:
+      'The live home of a 16-member student entrepreneurship team and its campus-wide events.',
+    features: [
+      'Events and results, blog and magazine',
+      'Newsletter sign-up, contact and legal pages',
+      'Designed, built, deployed and maintained end to end',
+    ],
+    category: 'Full Stack',
+    status: 'Deployed',
+    tags: ['Next.js', 'TypeScript', 'Tailwind CSS'],
+    private: true,
+    demo: 'https://ecellscsvmv.in',
+    year: 2026,
+  },
   {
     id: 'weapon-detection',
     title: 'Weapon Detection Platform',
@@ -289,19 +402,6 @@ export const PROJECTS: Project[] = [
     tags: ['Python', 'Flutter', 'ESP32', 'LiDAR', 'WebSocket', 'C++'],
     repo: 'agv-laptop-esp32',
     github: 'https://github.com/sandeepbollavaram/agv-laptop-esp32',
-    year: 2026,
-  },
-  {
-    id: 'alos',
-    title: 'ALOS',
-    description: 'Open-source systems project from the sandeepbollavaram GitHub.',
-    longDesc:
-      'ALOS — an open-source project on github.com/sandeepbollavaram. Live details (description, language, stars) are pulled from the GitHub API; edit this entry to add a custom write-up.',
-    category: 'Platform & Infrastructure',
-    status: 'Open Source',
-    tags: ['Open Source'],
-    repo: 'ALOS',
-    github: 'https://github.com/sandeepbollavaram/ALOS',
     year: 2026,
   },
   {
@@ -426,6 +526,7 @@ export const CATEGORIES: Category[] = [
   'Featured Engineering',
   'AI & LLM Systems',
   'Platform & Infrastructure',
+  'Full Stack',
   'Desktop Applications',
   'Cloud & Security',
   'Robotics & IoT',

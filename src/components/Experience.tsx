@@ -7,13 +7,32 @@ const RESUME_PATH = '/Sandeep_Kumar_Bollavaram_Resume.pdf';
 
 const HIGHLIGHTS = [
   {
-    role: 'AI & Platform Engineering',
-    org: 'Flexdee Technologies',
-    period: '2025 — Present',
+    role: 'Freelance AI/ML Engineer',
+    org: 'Algorithec Private Limited · Remote',
+    period: 'Jun 2026 — Present',
     points: [
-      'Architect and build AI platform features and backend systems end to end.',
-      'Design full-stack architecture across web and mobile with shared backends.',
-      'Own CI/CD pipelines and product engineering from prototype to release.',
+      "Core contributor to Algorithec's AI-driven commerce decision engine (pre-launch), shaping its core architecture across backend services and the decision-engine layer.",
+      'Joined as AI/ML Engineer Intern (Jun – Aug 2026) and led the engineering team on assigned initiatives through standups, sprint planning and weekly reviews with the founder.',
+      'Own the API integration with ONDC (Open Network for Digital Commerce) and built the firewall layer securing the commerce workflows.',
+    ],
+  },
+  {
+    role: 'Architect & Tech Lead — Complaint Intelligence Platform',
+    org: 'Vastu Housing Finance · Prototype',
+    period: '2026',
+    points: [
+      'Lead a pre-production fintech platform: omnichannel complaint intake including a 7-language voice agent.',
+      'Evidence-cited investigations, human-approved resolutions and a hash-chained audit log, backed by ~990 automated tests.',
+    ],
+  },
+  {
+    role: 'President & Team Lead',
+    org: 'Entrepreneurship Cell (E-Cell), SCSVMV University',
+    period: '2026 — Present',
+    points: [
+      'Lead a 16-member core team across event programming, outreach, sponsorship and campus startup initiatives.',
+      "Organised 4+ events under E-Cell IIT Bombay's National Entrepreneurship Challenge, including YUKTI '26 (The Big Idea Pitch) where 15 startup teams pitched to an expert jury.",
+      'Designed, built, deployed and maintain the official website at ecellscsvmv.in.',
     ],
   },
   {
@@ -21,8 +40,8 @@ const HIGHLIGHTS = [
     org: 'Independent',
     period: 'Ongoing',
     points: [
-      'Maintain public projects spanning Kubernetes operators, AI agent infrastructure, and developer tools.',
-      'Ship production-grade software with releases, CI, and documentation.',
+      '2,000+ GitHub contributions and 20+ shipped projects across Kubernetes operators, AI agent infrastructure and developer tools.',
+      'Ship production-grade software with releases, CI, tests and documentation — VORTEX, Kairo, Shukra, ALOS and Anything Download.',
     ],
   },
 ];

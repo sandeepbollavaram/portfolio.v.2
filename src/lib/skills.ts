@@ -16,22 +16,22 @@ export const SKILL_GROUPS: SkillGroup[] = [
   {
     category: 'Platform Engineering',
     color: '#0891B2',
-    skills: ['Kubernetes', 'Kubebuilder', 'controller-runtime', 'CRDs', 'Webhooks', 'Helm', 'gRPC', 'Docker', 'GitHub Actions', 'CI/CD'],
+    skills: ['Kubernetes', 'Kubebuilder', 'controller-runtime', 'CRDs', 'Webhooks', 'Helm', 'gRPC', 'Docker', 'GitHub Actions', 'Caddy', 'Trivy', 'CI/CD', 'Linux', 'Oracle Cloud'],
   },
   {
     category: 'AI & LLM',
     color: '#7C3AED',
-    skills: ['MCP', 'AI Agents', 'RAG', 'Ollama', 'LangChain', 'Embeddings', 'Vector Retrieval', 'Whisper', 'Local AI'],
+    skills: ['MCP', 'AI Agents', 'Agentic Workflows', 'RAG', 'Explainable RAG', 'pgvector', 'ChromaDB', 'Embeddings', 'LangChain', 'Ollama', 'Whisper', 'Human-in-the-loop AI'],
   },
   {
     category: 'Backend',
     color: '#0D9488',
-    skills: ['FastAPI', 'Node.js', 'PostgreSQL', 'Firebase', 'REST', 'gRPC', 'SQLite'],
+    skills: ['FastAPI', 'SQLAlchemy', 'Node.js', 'Express', 'REST', 'WebSockets', 'Redis Queues', 'Event-driven (Outbox)', 'PostgreSQL', 'SQLite', 'Supabase', 'Firebase'],
   },
   {
     category: 'Frontend',
     color: '#0284C7',
-    skills: ['Next.js', 'React', 'Tailwind CSS', 'TypeScript', 'Three.js'],
+    skills: ['Next.js', 'React', 'Flutter', 'Tailwind CSS', 'TypeScript', 'Three.js', 'pytest', 'Playwright'],
   },
   {
     category: 'Desktop',
@@ -49,9 +49,9 @@ export const SKILL_GROUPS: SkillGroup[] = [
 export const SNAPSHOT = [
   { label: 'Platform Engineering', detail: 'Go, Kubernetes, Operators, Helm, gRPC', color: '#0891B2' },
   { label: 'AI Systems', detail: 'MCP, RAG, AI Agents, Ollama, Vector Memory', color: '#7C3AED' },
-  { label: 'Full Stack', detail: 'Next.js, Flutter, FastAPI, PostgreSQL', color: '#0284C7' },
-  { label: 'Desktop Applications', detail: 'WinUI 3, .NET, Local AI', color: '#D97706' },
-  { label: 'Open Source', detail: 'Multiple public projects and releases', color: '#6366F1' },
+  { label: 'Full Stack', detail: 'Next.js, FastAPI, Redis, Flutter, PostgreSQL', color: '#0284C7' },
+  { label: 'Live Deployments', detail: 'anythingdownload.in (Oracle Cloud), ecellscsvmv.in', color: '#D97706' },
+  { label: 'Open Source', detail: '2,000+ contributions · 20+ shipped projects', color: '#6366F1' },
 ];
 
 // Flat technology cloud, grouped-ready ordering for the Skills section footer.
@@ -59,7 +59,7 @@ export const TECH_STACK = [
   'Go', 'Python', 'TypeScript', 'C#', 'C++', 'Dart', 'SQL', 'R',
   'Kubernetes', 'Kubebuilder', 'Helm', 'gRPC', 'Docker', 'GitHub Actions',
   'MCP', 'RAG', 'Ollama', 'LangChain', 'Embeddings', 'Whisper',
-  'FastAPI', 'Node.js', 'PostgreSQL', 'Firebase',
+  'FastAPI', 'Node.js', 'Redis', 'PostgreSQL', 'Supabase', 'Firebase', 'Caddy', 'Oracle Cloud',
   'Next.js', 'React', 'Tailwind CSS', 'Three.js',
   'WinUI 3', '.NET', 'PyQt6',
   'Raspberry Pi', 'ESP32', 'LiDAR', 'SLAM', 'Flutter',

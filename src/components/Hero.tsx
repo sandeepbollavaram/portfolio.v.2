@@ -190,11 +190,12 @@ export default function Hero() {
               maxWidth: '520px', marginBottom: '24px', lineHeight: 1.75,
             }}
           >
-            I build production software across{' '}
+            2,000+ GitHub contributions and 20+ shipped projects across{' '}
             <span style={{ color: '#0F0E14', fontWeight: 600 }}>Kubernetes operators</span>,{' '}
-            <span style={{ color: '#0F0E14', fontWeight: 600 }}>AI agent memory systems</span>,{' '}
+            <span style={{ color: '#0F0E14', fontWeight: 600 }}>agentic developer tooling</span>,{' '}
             local-first <span style={{ color: '#0F0E14', fontWeight: 600 }}>LLM infrastructure</span>,
-            cloud-native platforms, Windows AI assistants, and robotics systems.
+            and production web apps. Currently a freelance AI/ML engineer at{' '}
+            <span style={{ color: '#0F0E14', fontWeight: 600 }}>Algorithec</span>.
           </p>
 
           <div style={{ display: 'flex', flexWrap: 'wrap', gap: '16px', marginBottom: '32px' }}>
@@ -238,7 +239,7 @@ export default function Hero() {
             }}>
               Building
             </span>
-            {['Shukra', 'Kairo', 'Vayu', 'OCI SentinelMesh', 'Vibrance'].map((name, i, arr) => (
+            {['Anything Download', 'VORTEX', 'Kairo', 'Shukra', 'ALOS'].map((name, i, arr) => (
               <span key={name} style={{ display: 'inline-flex', alignItems: 'center', gap: '10px' }}>
                 <span style={{
                   fontSize: '0.8rem', fontWeight: 600, color: '#4B5563',
